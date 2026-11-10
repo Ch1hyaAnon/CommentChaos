@@ -34,8 +34,8 @@ export default function InputStage({
           AI 帮你把它<em>吵上热搜</em>。
         </h1>
         <p className="cc-hero-sub">
-          一句吐槽丢进社区，热评王、反方、乐子人、神秘知情人立刻进场，
-          共鸣 → 分裂 → 歪楼 → 升华，十楼吵完直接给你生成热搜总结。
+          一句吐槽丢进社区，护主的、唱反调的、反串的、看热闹的各说各话，
+          有人共鸣，有人抬杠，也有人顺手歪楼，十条评论带出不同视角，再给你一份热搜总结。
         </p>
       </div>
       <div className="cc-input-card" style={{ marginTop: 20 }}>

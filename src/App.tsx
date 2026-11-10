@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { CommentItem, DirectorAction, ThreadResult, TrendItem } from "./types";
-import { COMMUNITY_LIST, LOADING_LINES } from "./types";
-import { generateThread, ERROR_TEXT } from "./api";
+import type { CommentItem, DirectorAction, ThreadResult, TrendItem, KnowledgeMetadata, MemeMetadata, HotspotContext } from "./types";
+import { COMMUNITY_LIST } from "./types";
+import { generateThread, ERROR_TEXT, GenerationError } from "./api";
 import { DEMO_THREAD } from "./demo";
 import { filterDuplicates, remapBatchReplies } from "./dedupe";
 import InputStage from "./components/InputStage";
@@ -26,6 +26,8 @@ export default function App() {
   const [community, setCommunity] = useState("campus");
   const [mode, setMode] = useState<"auto" | "director">("auto");
   const [comments, setComments] = useState<CommentItem[]>([]);
+  const [memeContext, setMemeContext] = useState<MemeMetadata | null>(null);
+  const [knowledge, setKnowledge] = useState<KnowledgeMetadata | null>(null);
   const [result, setResult] = useState<ThreadResult | null>(null);
   const [visible, setVisible] = useState(0);
   const [busy, setBusy] = useState(false);
@@ -35,7 +37,9 @@ export default function App() {
   const [turns, setTurns] = useState(0);
   const [finished, setFinished] = useState(false);
   const [isDemo, setIsDemo] = useState(false);
-  const [loadingLine, setLoadingLine] = useState(LOADING_LINES[0]);
+  const [hotspotContext, setHotspotContext] = useState<HotspotContext | null>(null);
+  const [hotspotSupplement, setHotspotSupplement] = useState("");
+  const hotspotTokenRef = useRef<string | undefined>(undefined);
   const [selectedTrend, setSelectedTrend] = useState<TrendItem | null>(null);
   const [noNewNotice, setNoNewNotice] = useState<string | null>(null);
 
@@ -48,28 +52,11 @@ export default function App() {
   const originalSeedRef = useRef("");
   const selectedTrendRef = useRef<TrendItem | null>(null);
   const autoTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const loadingTimer = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const setCommentsSynced = (next: CommentItem[]) => {
     commentsRef.current = next;
     setComments(next);
   };
-
-  // 加载台词轮换
-  useEffect(() => {
-    if (!busy) {
-      if (loadingTimer.current) clearInterval(loadingTimer.current);
-      loadingTimer.current = null;
-      return;
-    }
-    let i = Math.floor(Math.random() * LOADING_LINES.length);
-    setLoadingLine(LOADING_LINES[i]);
-    loadingTimer.current = setInterval(() => {
-      i = (i + 1) % LOADING_LINES.length;
-      setLoadingLine(LOADING_LINES[i]);
-    }, 2400);
-    return () => { if (loadingTimer.current) clearInterval(loadingTimer.current); };
-  }, [busy]);
 
   // 逐条弹出
   useEffect(() => {
@@ -103,7 +90,7 @@ export default function App() {
       setError(null);
       setNoNewNotice(null);
       try {
-        const { thread, duplicates } = await generateThread(
+        const { thread, duplicates, knowledge: nextKnowledge, meme_context: nextMemeContext, hotspot_context: nextHotspot, hotspot_token: nextToken } = await generateThread(
           {
             seed: seedText,
             community,
@@ -113,6 +100,9 @@ export default function App() {
               role: c.role, text: c.text,
             })),
             base_count: commentsRef.current.length,
+            hotspot_id: selectedTrendRef.current?.id,
+            hotspot_token: hotspotTokenRef.current,
+            hotspot_supplement: hotspotSupplement,
             news_context: selectedTrendRef.current
               ? `${selectedTrendRef.current.title}（来源：${selectedTrendRef.current.source}）`
               : "",
@@ -142,6 +132,10 @@ export default function App() {
             setCommentsSynced([...commentsRef.current, ...withLocalIds(fresh)]);
           }
         }
+        setHotspotContext(nextHotspot ?? null);
+        hotspotTokenRef.current = nextToken;
+        setKnowledge(nextKnowledge ?? null);
+        setMemeContext(nextMemeContext ?? null);
         setResult(thread);
         setTurns((t) => t + 1);
         if (action === "finale") setFinished(true);
@@ -157,7 +151,7 @@ export default function App() {
         if (code === "no_new_comments") {
           setNoNewNotice(ERROR_TEXT.no_new_comments);
         } else {
-          setError(ERROR_TEXT[code] ?? "这楼没吵起来，重新开一次");
+          setError((ERROR_TEXT[code] ?? "这楼没吵起来，重新开一次") + (e instanceof GenerationError && e.trace_id ? `（追踪编号：${e.trace_id}）` : ""));
         }
       } finally {
         if (mySession === sessionRef.current) {
@@ -166,18 +160,18 @@ export default function App() {
         }
       }
     },
-    [seed, community],
+    [seed, community, hotspotSupplement],
   );
 
   // 自动看戏：播完自动续幕
   useEffect(() => {
     if (screen !== "thread" || mode !== "auto" || isDemo) return;
-    if (busy || finished || visible < comments.length) return;
+    if (busy || finished || error || visible < comments.length) return;
     if (turns > AUTO_MAX_TURNS) return;
     clearAuto();
     autoTimer.current = setTimeout(() => runGenerate("continue"), AUTO_NEXT_MS);
     return clearAuto;
-  }, [screen, mode, isDemo, busy, finished, visible, comments.length, turns, runGenerate]);
+  }, [screen, mode, isDemo, busy, finished, error, visible, comments.length, turns, runGenerate]);
 
   const onLike = (localId: number) => {
     setLikedSet((prev) => {
@@ -203,7 +197,12 @@ export default function App() {
     abortRef.current?.abort();
     sessionRef.current++;
     busyRef.current = false;
+    setBusy(false);
     setIsDemo(true);
+    setHotspotContext(null);
+    hotspotTokenRef.current = undefined;
+    setKnowledge(null);
+    setMemeContext(null);
     setResult(DEMO_THREAD);
     setCommentsSynced(withLocalIds(DEMO_THREAD.comments));
     setVisible(0);
@@ -222,6 +221,10 @@ export default function App() {
     busyRef.current = false;
     setScreen("input");
     setCommentsSynced([]);
+    setHotspotContext(null);
+    hotspotTokenRef.current = undefined;
+    setKnowledge(null);
+    setMemeContext(null);
     setResult(null);
     setVisible(0);
     setBusy(false);
@@ -232,6 +235,7 @@ export default function App() {
     setFinished(false);
     setIsDemo(false);
     setSelectedTrend(null);
+    setHotspotSupplement("");
     selectedTrendRef.current = null;
   };
 
@@ -244,9 +248,7 @@ export default function App() {
         <header className="cc-masthead">
           <div className="cc-brand">
             <span className="cc-brand-mark">评论区叠叠乐</span>
-            <span className="cc-brand-sub">Comment Chaos · AI 嘴替编辑部</span>
           </div>
-          <span className="cc-issue">虚构娱乐演绎 · 无需登录 · 第 1 期</span>
         </header>
 
         {screen === "input" ? (
@@ -256,29 +258,43 @@ export default function App() {
                 seed={seed}
                 setSeed={setSeed}
                 community={community}
-                setCommunity={setCommunity}
+                setCommunity={(value) => { if (!busyRef.current) setCommunity(value); }}
                 onSubmit={() => runGenerate(null)}
                 onDemo={startDemo}
                 error={error}
                 busy={busy}
               />
+              {selectedTrend && <div className="cc-hotspot-supplement">
+                <label htmlFor="cc-hotspot-supplement">补充事件内容 <small>仅作为检索线索，未经独立核实</small></label>
+                <textarea id="cc-hotspot-supplement" className="cc-textarea" rows={3} maxLength={3000} disabled={busy} value={hotspotSupplement}
+                  placeholder="可补充具体行为、原话或事件经过，帮助找到相关资料；不会直接作为已证实事实。"
+                  onChange={e => setHotspotSupplement(e.target.value)} />
+              </div>}
               {busy && (
                 <div className="cc-loading" role="status" style={{ marginTop: 24 }}>
-                  <p className="cc-loading-line cc-loading-dots">{loadingLine}</p>
-                  <p className="cc-hint">AI 嘴替们正在入场（一般 10–30 秒）</p>
+                  <p className="cc-loading-line cc-loading-dots">正在检索相关资料并生成评论</p>
+                  <p className="cc-hint">{selectedTrend ? "正在获取事件细节；资料不足时会暂停并保留输入" : "检索不可用时会提示，并继续生成虚构评论"}</p>
                 </div>
               )}
             </div>
             <TrendingPanel
+              community={community}
+              disabled={busy}
               selected={selectedTrend}
               onSelect={(it) => {
                 setSelectedTrend(it);
                 selectedTrendRef.current = it;
                 setSeed(it.title);
+                setHotspotSupplement("");
+                hotspotTokenRef.current = undefined;
+                setError(null);
               }}
               clearSelected={() => {
                 setSelectedTrend(null);
                 selectedTrendRef.current = null;
+                setHotspotSupplement("");
+                hotspotTokenRef.current = undefined;
+                setError(null);
               }}
             />
           </div>
@@ -301,6 +317,38 @@ export default function App() {
                     {selectedTrend && !isDemo && <> · 热点种子：{selectedTrend.title}</>}
                   </p>
                 </article>
+                {hotspotContext && <details className="cc-knowledge cc-event-background">
+                  <summary>事件背景 · {hotspotContext.status === "ready" ? "含正文资料" : "仅摘要资料"} · {hotspotContext.points.length} 个信息点</summary>
+                  <p>以下摘录用于支撑背景；楼内评论为 AI 生成，不代表来源观点。获取于 {new Date(hotspotContext.retrieved_at).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}。</p>
+                  <ul>{hotspotContext.points.map(point => <li key={point.id}>
+                    <span className="cc-event-kind">{({ fact: "事件记录", claim: "来源中的指控", opinion: "他人观点", uncertain: "尚未确认" })[point.kind]}</span>{" "}{point.text}{" "}
+                    <a href={/^https:\/\//i.test(point.source_url) ? point.source_url : undefined} target="_blank" rel="noopener noreferrer">原文 ↗</a>
+                  </li>)}</ul>
+                </details>}
+                {knowledge && (
+                  <details className="cc-knowledge">
+                    <summary>
+                      {knowledge.status === "ready" ? "背景参考来源" : knowledge.status === "summary_only" ? "背景参考（仅搜索摘要）" : knowledge.status === "empty" ? "未找到相关资料，以下为虚构演绎" : "实时资料暂不可用，以下为虚构演绎"}
+                      {knowledge.sources.length > 0 && ` · ${knowledge.sources.length} 个来源`}
+                    </summary>
+                    <p>来源仅支持背景资料，不代表来源认可虚构评论。检索于 {new Date(knowledge.retrieved_at).toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" })}（北京时间）。</p>
+                    {knowledge.sources.map(source => (
+                      <div key={source.url}>
+                        <a href={/^https?:\/\//i.test(source.url) ? source.url : undefined} target="_blank" rel="noopener noreferrer">{source.title}</a>
+                        <p>发布时间：{source.published_at ? new Date(source.published_at).toLocaleDateString("zh-CN", { timeZone: "Asia/Shanghai" }) : "未知"} · {source.kind === "summary" ? "仅摘要" : "已读取正文"}</p>
+                      </div>
+                    ))}
+                  </details>
+                )}
+                {memeContext && (
+                  <details className="cc-knowledge">
+                    <summary>{memeContext.status === "unavailable" ? "梗素材检索暂不可用" : memeContext.sources.length ? "表达素材参考 · 梗Wiki" : "本轮没有新增的相关梗素材"}</summary>
+                    <p>{memeContext.status === "unavailable" ? "本轮未取得可用素材，继续围绕话题评论。" : memeContext.sources.length ? "以下是提供给模型的表达参考，不代表每条都被使用；更新时间不代表流行时间。" : "查询未命中、候选不相关或表达已用过时，不强行塞梗。"}</p>
+                    {memeContext.sources.map(source => (
+                      <p key={source.url}><a href={/^https?:\/\//i.test(source.url) ? source.url : undefined} target="_blank" rel="noopener noreferrer">{source.title}</a></p>
+                    ))}
+                  </details>
+                )}
                 <StageBar visibleCount={visible} comments={comments} />
                 <CommentFeed
                   comments={comments}
@@ -311,7 +359,7 @@ export default function App() {
                 />
                 {busy && (
                   <div className="cc-loading" role="status" style={{ marginTop: 16 }}>
-                    <p className="cc-loading-line cc-loading-dots">{loadingLine}</p>
+                    <p className="cc-loading-line cc-loading-dots">正在检索相关资料并生成评论</p>
                   </div>
                 )}
                 {error && (

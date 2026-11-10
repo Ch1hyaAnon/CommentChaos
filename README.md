@@ -62,3 +62,9 @@ After copying the starter, rename `gitignore.template` to `.gitignore` before in
 ## Design workbench
 
 On Desktop, call `open_design_workbench` with the project name and design registration (pages and implemented Nudge capabilities). The tool creates the single `.站点名称.qoder.site` entry; update it through `update_design_workbench`. The starter deliberately contains no fixed-name project entry. Components consume `--site-*` variables defined in the existing application stylesheet. The workbench only previews temporary overrides and attaches requested changes to chat. The Agent implements changes and prepares publication artifacts before reporting completion; no dedicated theme file is required.
+
+## 评论区：实时知识与周更梗库
+
+检索接入、环境变量、测试、每周候选审核、发布和回滚步骤见 [使用说明](docs/knowledge-and-memes.md)。
+
+热点推荐、事件背景获取、接口状态与本地验证见 [热点说明](docs/hotspots.md)。选中热点后会先获取具体内容，证据不足时暂停开楼。

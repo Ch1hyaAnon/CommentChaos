@@ -241,11 +241,11 @@ await test("handler：>40 楼时全局编号按真实 base_count 延续", async 
     const data = await res.json();
     assert.equal(data.ok, true);
     assert.equal(data.base_count, 50);
-    // digest 近期窗口（末 8 楼）使用真实全局编号 43..50
-    const prompt = captured.messages.map((m) => m.content).join("\n");
-    assert.match(prompt, /43楼\[/, "摘要应从 43 楼开始（50-8+1）");
-    assert.doesNotMatch(prompt, /1楼\[/, "不得把近期楼重置为 1 楼起编号");
-    assert.doesNotMatch(prompt, /41楼\[/, "不得按截断后的 40 条重置编号");
+    const context = JSON.parse(captured.messages[1].content.split("\n")[1]);
+    assert.equal(context.existing_total, 50);
+    assert.match(context.recent_comments, /^11楼\[/);
+    assert.match(context.recent_comments, /50楼\[/);
+    assert.equal(context.recent_comments.split("\n").length, 40);
     const [c1, c2] = data.thread.comments;
     assert.equal(c1.no, 51);
     assert.equal(c2.no, 52);

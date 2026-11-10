@@ -1,6 +1,6 @@
 export type Stage = "resonance" | "split" | "derail" | "sublimate";
 export const STAGE_NAMES: Record<Stage, string> = {
-  resonance: "共鸣", split: "分裂", derail: "歪楼", sublimate: "升华",
+  resonance: "站队", split: "互怼", derail: "跑题", sublimate: "回扣",
 };
 export const STAGE_ORDER: Stage[] = ["resonance", "split", "derail", "sublimate"];
 
@@ -27,8 +27,8 @@ export const DIRECTOR_BUTTONS: {
 }[] = [
   { id: "continue", label: "继续看戏", emoji: "🍿" },
   { id: "louder", label: "让它更吵", emoji: "🔊" },
-  { id: "rational", label: "来个理性人", emoji: "🤓" },
-  { id: "insider", label: "爆点内幕", emoji: "🍉" },
+  { id: "rational", label: "来个带论据的", emoji: "🤓" },
+  { id: "insider", label: "扒点细节", emoji: "🍉" },
   { id: "derail", label: "歪楼加速", emoji: "🛸" },
   { id: "finale", label: "结束总结", emoji: "🎬" },
 ];
@@ -59,6 +59,13 @@ export interface ThreadResult {
 }
 
 export interface TrendItem {
+  id: string;
+  platform: string;
+  description: string;
+  rank: number;
+  heat: number | null;
+  fetched_at: string;
+  appearances: number;
   title: string;
   url: string;
   source: string;
@@ -77,3 +84,32 @@ export const LOADING_LINES = [
   "吵架值过载，正在散热……",
   "AI 嘴替们正在抢麦……",
 ];
+
+export interface KnowledgeMetadata {
+  status: "ready" | "summary_only" | "empty" | "unavailable";
+  retrieved_at: string;
+  sources: { title: string; url: string; published_at: string | null; retrieved_at: string; kind: "page" | "summary" }[];
+}
+
+export interface MemeMetadata {
+  reason?: string;
+  status: "ready" | "empty" | "unavailable";
+  retrieved_at: string;
+  sources: { title: string; url: string; updated_at: string | null }[];
+}
+
+export interface RetrievalMetadata {
+  entity: { status: "resolved" | "not_required" | "ambiguous"; name: string; aliases: string[]; source_urls: string[] };
+  counts: { ai_calls: number; fact_queries: number; fact_pages: number; meme_queries: number; matched: number; details: number; ranked: number; selected: number; injected: number };
+  stages: { stage: string; status: string; reason?: string; count?: number }[];
+  strategy_version: string;
+  cache_hit?: boolean;
+}
+
+export interface TrendSourceStatus { source: string; status: "ready" | "unavailable"; count: number }
+export interface HotspotContext {
+  id: string; title: string; status: "ready" | "summary_only" | "insufficient"; retrieved_at: string;
+  summary: string;
+  points: { id: string; text: string; evidence: string; source_url: string; kind: "fact" | "claim" | "opinion" | "uncertain" }[];
+  sources: KnowledgeMetadata["sources"];
+}

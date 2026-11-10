@@ -1,0 +1,711 @@
+{
+  "first_plan": {
+    "fact_query": "bin",
+    "meme_keywords": []
+  },
+  "first_searches": [
+    {
+      "results": [
+        {
+          "title": "[情报站]BIN：这个世界冠军不是结束，而是开始",
+          "site_name": "虎扑",
+          "site_icon": "https://cdn.deepseek.com/site-icons/hupu.com",
+          "authority": 2,
+          "rerank_score": 1.3504772186279297,
+          "date": "2026-11-07T16:00:00+00:00",
+          "url": "https://bbs.hupu.com/643765462.html",
+          "summary": "# [情报站]BIN：这个世界冠军不是结束，而是开始\n...\n虎扑JR2068954764(3级)楼主2026-11-08 15:12:13发布于广东\n...\n虎扑11月15日讯 2026英雄联盟全球总决赛决赛BLG以3比0战胜GEN晋级决赛，赛后BIN选手接受舞台流专访，原视频内容翻译如下：\n\nQ：（bin）请谈谈这次夺冠的感想？\n\nBIN：这个世界冠军不是结束，而是开始。现在属于BLG时代\n\n北京时间11月15日凌晨3点，BLG夺得2026英雄联盟全球总决赛冠军。\n...\n从青涩少年到世界顶级上单，跌撞不改志，苦战终圆梦。捧杯时刻，所有汗水都有了答案，恭喜 Bin夺得S16全球总决赛冠军！",
+          "snippet": "虎扑11月15日讯 2026英雄联盟全球总决赛决赛BLG以3比0战胜GEN晋级决赛，赛后BIN选手接受舞台流专访，原视频内容翻译如下 ... 捧杯时刻，所有汗水都有了答案，恭喜 Bin夺得S16全球总决赛冠军！",
+          "content": ""
+        },
+        {
+          "title": "BIN/IIN Data - Pagos",
+          "site_name": "Pagos AI",
+          "site_icon": "https://cdn.deepseek.com/site-icons/pagos.ai",
+          "authority": 3,
+          "rerank_score": 1.3352763652801514,
+          "date": "2026-11-05T16:00:00+00:00",
+          "url": "https://docs.pagos.ai/payments-basics/card-brand-services/bin-iin-data",
+          "summary": "It is also commonly referred to as the issuer identification number (IIN).Issuing banks request BINs as part of their agreements with the card brands and use those numbers when issuing cards to cardholders. When a cardholder then makes a purchase, the merchant sends the transaction through the card brand, which uses the BIN to route the transaction to the right issuing bank for processing. Ultimately, the BIN is a critical part of the card number which enables transactions to flow globally.BINs contain a lot of information about the associated payment card, including:\n...\nStandard data includes basic information such as BIN number, card network, and card type, while enhanced data provides significantly more details about your customers and their payment methods.\n...\nIn 2015, the industry began work on a change that would increase the length of BINs from six to eight digits, accounting for an increased issuer demand for more card numbers. The 2017 revision of the standard defined the new eight-digit BIN and outlined a timeline for converting existing six digits BINs to eight digits.\n...\nThe first set of digits in that number is called the `,_jsx(_components.strong,{children:`BIN`}),`.`]}),`\\n`,_jsx(Heading,{level:`1`,id:`bank-identification-numbers-bins`,children:`Bank Identification Numbers (BINs)`}),`\\n`,_jsx(_components.p,{children:`A bank identification number (BIN) is the first 6-10 digits on a credit, debit, prepaid, or commercial card which identifies the bank that issued the card. It is also commonly referred to as the issuer identification number (IIN).`}),`\\n`,_jsx(_components.p,{children:`Issuing banks request BINs as part of their agreements with the card brands and use those numbers when issuing cards to cardholders.\n...\nUltimately, the BIN is a critical part of the card number which enables transactions to flow globally.`}),`\\n`,_jsx(_components.p,{children:`BINs contain a lot of information about the associated payment card, including:`}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsx(_components.li,{children:`Issuing bank name`}),`\\n`,_jsx(_components.li,{children:`Card brand`}),`\\n`,_jsx(_components.li,{children:`Category level (e.g. corporate, signature)`}),`\\n`,_jsx(_components.li,{children:`Card type (i.e. credit, debit, prepaid)`}),`\\n`,_jsx(_components.li,{children:`Prepaid (reloadable/non-reloadable)`}),`\\n`,_jsx(_components.li,{children:`Issuing country`}),`\\n`,_jsx(_components.li,{children:`Account updater status (e.g. enabled/disabled)`}),`\\n`]}),`\\n`,_jsx(Heading,{level:`1`,id:`using-bin-data`,children:`Using BIN data`}),`\\n`,_jsx(_components.p,{children:`You can use the valuable information stored in a card’s BIN to optimize your payment processing, reduce overall costs, and improve customer experiences.`}),`\\n`,_jsx(Heading,{level:`2`,id:`optimize-your-processing-capabilities`,children:`Optimize Your Processing Capabilities`}),`\\n`,_jsx(_components.p,{children:`Using BIN data, you can adapt your payment processing strategy in real time according to the exact card a customer uses.\n...\nFor example, you can:`}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsx(_components.li,{children:`Identify the exact card type (e.g. credit vs debit) and only apply surcharges to purchases made with credit cards`}),`\\n`,_jsx(_components.li,{children:`Route BINs issued in particular regions or countries to the most favorable payment service provider (PSP) to ensure higher approval rates`}),`\\n`,_jsx(_components.li,{children:`Restrict non-reloadable prepaid cards from purchasing subscription services/products to avoid non-sufficient fund (NSF) declines`}),`\\n`,_jsx(_components.li,{children:`Identify and block BINs associated with fraudulent activity`}),`\\n`,_jsx(_components.li,{children:`Identify trends in declined BINs (e.g. all from the same issuing bank or issuing country) and establish rules to block those BINs`}),`\\n`]}),`\\n`,_jsx(Heading,{level:`2`,id:`reduce-payment-processing-costs`,children:`Reduce Payment Processing Costs`}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsx(_components.li,{children:`Identify...",
+          "snippet": "The first set of digits in that number is called the ` ... `A bank identification number (BIN) is the first 6-10 digits on a credit ... It is also commonly referred to as the issuer identification number (IIN).`}),`\\n`,_jsx(_components.p ... the BIN is a critical part of the card number which enables transactions to flow globally.`})...",
+          "content": ""
+        },
+        {
+          "title": "BIN Data General FAQ - Pagos",
+          "site_name": "Pagos AI",
+          "site_icon": "https://cdn.deepseek.com/site-icons/pagos.ai",
+          "authority": 3,
+          "rerank_score": 1.2972742319107056,
+          "date": "2026-11-05T16:00:00+00:00",
+          "url": "https://docs.pagos.ai/bin-database/general-faq",
+          "summary": "If a field response is null, this means our card brand files don’t include any data for that field.\n...\nThere are use cases (e.g.\n...\nIn our API response, we provide a helpful ranking based on our logic, which places the big global networks (Visa, MasterCard, Amex, Discover, JCB, Unionpay) as primary and other network enablements as additional.\n...\nIn cases where networks have co-processing agreements, networks will add a network’s ranges to its table to allow those cards to be routed.\n...\nThe primary card brand for the BIN will be one of the main card brands—Visa, Mastercard, Amex, and Discover; the secondary is typically a pinless debit network or a regional brand (e.g. ETPOS, Dankort, Carte Bancaire).\n...\nFor Visa, it maps one-digit codes to full descriptions (C=Credit, D=Debit, H=Charge Card, P=Prepaid, R=Deferred Debit). For Mastercard, it uses the top-level funding source from their BIN file (DEBIT, CREDIT, PREPAID, NONE).\n...\n`}),`\\n`,_jsxs(_components.p,{children:[`Most card networks have moved from six-digit to eight-digit BIN ranges. When you query with a shorter BIN, we pad the value with zeros to build the 19-digit number we use to compare against bin_min and bin_max. For example, if you search for the 6-digit BIN `,_jsx(_components.code,{children:`413555`}),`, we pad it to `,_jsx(_components.code,{children:`4135550000000000000`}),`. In this case, the real BIN for the card in question is eight digits (`,_jsx(_components.code,{children:`41355506`}),`) and exists in the Pagos BIN database in the following range:`]}),`\\n`,_jsxs(_components.ul,{children:[`\\n`,_jsxs(_components.li,{children:[_jsx(_components.code,{children:`bin_min`}),` - `,_jsx(_components.code,{children:`4135550600000000000`})]}),`\\n`,_jsxs(_components.li,{children:[_jsx(_components.code,{children:`bin_max`}),` - `,_jsx(_components.code,{children:`4135550699999999999`})]}),`\\n`]}),`\\n`,_jsx(_components.p,{children:`As such, the six-digit BIN (plus padding) falls outside the actual BIN range and won’t return a match in the Pagos BIN Database.`}),`\\n`,_jsx(_components.p,{children:`To get the most accurate result, always query with as many digits as you have available — ideally the full 8-digit BIN.`}),`\\n`,_jsx(Heading,{level:`2`,id:`what-does-a-null-field-response-mean`,children:`What does a Null field response mean?`}),`\\n`,_jsx(_components.p,{children:`The data provided in an individual field response depends on what data appears in the files we receive from the card brands. If a field response is null, this means our card brand files don’t include any data for that field.`}),`\\n`,_jsxs(Heading,{level:`2`,id:`what-is-the-difference-between-the-bin_length-and-pagos_bin_length-fields`,children:[`What is the difference between the `,_jsx(_components.code,{children:`bin_length`}),` and `,_jsx(_components.code,{children:`pagos_bin_length`}),` fields?`]}),`\\n`,_jsxs(_components.p,{children:[`The `,_jsx(_components.code,{children:`bin_length`}),` field is populated directly from the network when the data is available.`]}),`\\n`,_jsxs(_components.p,{children:[_jsx(_components.code,{children:`pagos_bin_length`}),` is a Pagos-specific field. We populate this field for all cards using our own logic, taking into consideration the bin_min and bin_max ranges and calculating the actual bin length for the range from those values.`]}),`\\n`,_jsxs(_components.p,{children:[_jsx(_components.code,{children:`pagos_bin_length`}),` is very helpful in determining whether more collecting digits would benefit your business. There are use cases...",
+          "snippet": "[`Most card networks have moved from six-digit to eight-digit BIN ranges. ... For example, if you search for the 6-digit BIN ` ... the real BIN for the card in question is eight digits (` ... `41355506`}),`) and exists in the Pagos BIN database in the following range:`]})...",
+          "content": ""
+        },
+        {
+          "title": "bin",
+          "site_name": "GitHub",
+          "site_icon": "https://cdn.deepseek.com/site-icons/github.com",
+          "authority": 3,
+          "rerank_score": 1.1568759679794312,
+          "date": "2026-11-07T16:00:00+00:00",
+          "url": "https://github.com/starrocks/starrocks/blob/ac735a433716371aa39c059933cc544182cf37fc/docs/en/sql-reference/sql-functions/math-functions/bin.md",
+          "summary": "# bin\n\nTransforms the inputarg into a binary.\n\n## Syntax\nbin(arg)\n\n## Parameter\n\narg: the input you want to transform into a binary. It supports the BIGINT data type.\n\n## Return value\n\nReturns a value of the VARCHAR data type.\n\n## Examples\nmysql> select bin(3);\n...\n| bin(3) |\n...\n| 11     |\n...\n1 row in set (0.02 sec)",
+          "snippet": "bin Transforms the inputarg into a binary. ## Syntax bin(arg) ## Parameter arg: the input you want to transform into a binary. It supports the BIGINT data type. ## Return value Returns a value of the VARCHAR data type. ## Examples",
+          "content": ""
+        },
+        {
+          "title": "Elk：我们有个群，Bin自己也在群里发Faker vs Bin",
+          "site_name": "懂球帝",
+          "site_icon": "https://cdn.deepseek.com/site-icons/dongqiudi.com",
+          "authority": 3,
+          "rerank_score": 1.1568759679794312,
+          "date": "2026-11-08T16:00:00+00:00",
+          "url": "http://pc.dongqiudi.com/articles/6632576.html",
+          "summary": "# Elk：我们有个群，Bin自己也在群里发Faker vs Bin\n\n北京时间11月9日，BLG在S16半决赛中3-1战胜T1晋级决赛。前BLG的AD选手Elk在直播中爆料，Bin自己也会玩Faker vs Bin的梗。\n\nElk在直播中说：“我们不是有个群吗，他们天天在那发Faker vs Bin，然后陈泽彬自己也在那发，他自己看到都会发在群里。”\n\n这个梗出自博主“东方红”的视频，在S14期间，他在视频中公式化地报上决赛两队的选手名字，该梗随后迅速走红。",
+          "snippet": "Bin自己也在群里发Faker vs Bin ... 前BLG的AD选手Elk在直播中爆料，Bin自己也会玩Faker vs Bin的梗。 Elk在直播中说：“我们不是有个群吗，他们天天在那发Faker vs Bin，然后陈泽彬自己也在那发，他自己看到都会发在群里。”",
+          "content": ""
+        }
+      ]
+    },
+    {
+      "results": [
+        {
+          "title": "WordNet Search",
+          "site_name": "princeton.edu",
+          "site_icon": "https://cdn.deepseek.com/site-icons/princeton.edu",
+          "authority": 4,
+          "rerank_score": 1.519673466682434,
+          "date": null,
+          "url": "http://wordnetweb.princeton.edu/perl/webwn/webwn?o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&s=bin",
+          "summary": "### Noun\n\n- S: (n) bin (a container; usually has a lid)\n- S: (n) bin, binful (the quantity contained in a bin)\n- S: (n) bank identification number, BIN, ABA transit number (an identification number consisting of a two-part code assigned to banks and savings associations; the first part shows the location and the second identifies the bank itself)\n\n### Verb\n\n- S: (v) bin (store in bins)",
+          "snippet": "(n) bin (a container; usually has a lid) - S: (n) bin, binful (the quantity contained in a bin) - S: (n) bank identification number, BIN, ABA transit number (an identification number consisting of a two-part code assigned to banks and savings associations ... (v) bin (store in bins)",
+          "content": ""
+        },
+        {
+          "title": "bin - DICT.TW 線上字典",
+          "site_name": "DICT.TW",
+          "site_icon": "https://cdn.deepseek.com/site-icons/dic.tw",
+          "authority": 3,
+          "rerank_score": 1.3823730945587158,
+          "date": null,
+          "url": "http://dic.tw/dict/bin",
+          "summary": "bin /ˈbɪn/\n箱櫃DOS文件擴展名:二進制目標文件\n...\nBin n. A box, frame, crib, or inclosed place, used as a receptacle for any commodity; as, a corn bin; a wine bin; a coal bin.\n\nBin, v. t. [imp. & p. p. Binned p. pr. & vb. n. Binning.] To put into a bin; as, to bin wine.\n\nBin. An old form of Be and Been. [Obs.]\n...\n資料來源: WordNet (r) 2.0\n\nbin\nn 1: a container; usually has a lid\n2: the quantity contained in a bin [syn: binful]\n3: an identification number consisting of a two-part code\nassigned to banks and savings associations; the first part\nshows the location and the second identifies the bank\nitself [syn: bank identification number, ABA transit\nnumber]\nv : store in bins\n[also: binning, binned]",
+          "snippet": "bin /ˈbɪn/ 箱櫃DOS文件擴展名 ... Bin n. A box, frame, crib, or inclosed place, used as a receptacle for any commodity; as, a corn bin; a wine bin; a coal bin. ... An old form of Be and Been. ... n 1: a container; usually has a lid",
+          "content": ""
+        },
+        {
+          "title": "bin（二进制文件）_百度百科 - 搜词条",
+          "site_name": "百度百科",
+          "site_icon": "https://cdn.deepseek.com/site-icons/baidu.com",
+          "authority": 3,
+          "rerank_score": 1.3823730945587158,
+          "date": "2025-08-29T16:00:00+00:00",
+          "url": "https://wapbaike.baidu.com/item/BIN/365081#1",
+          "summary": "二进制文件\n...\n二进制文件，其用途依系统或应用而定。一种文件格式binary的缩写。一个后缀名为\".bin\"的文件，只是表明它是binary格式。比如虚拟光驱文件常用\".bin\"作为后缀，但并不意味着所有的bin文件都是虚拟光驱文件。一般来讲是机器代码，汇编语言编译后的结果（磁盘操作系统下汇编语言编译后与\".com\"文件相类似），用debug、WINHEX，U_EDIT等软件可以打开（通常不一定能看得懂是些什么除非学习过汇编语言）。这类 所有的文件，无论文件扩展名是什么，一律分为两种格式\".text\"和\".binary\"。\n\n中文名\n...\n外文名\n\nbin\n\n全称\n...\n术语类别\n...\n安装方法\n\n4种\n...\n一个后缀名为\".bin\"的文件， 只是想表明它是binary格式，但并不表明它与某种应用程序有必然的联系性。\n...\n方法一\n\n先赋予权限： chmod 777 *.bin2.开始安装： ./*.bin (注意：在前面加上了两个字符)，剩下的就和Windows一样了。\n\n方法二\n\n首先用notepad（记事本）打开文件扩展名为CUE的文件，其内有后缀名为BIN的文件的文件名；\n\n然后将后缀名为BIN文件的文件名更改成CUE文件中指名的文件名；\n\n下载Daemon Tools(虚拟光驱)安装，即可打开。\n\n下载 WinMount 安装，即可打开。\n\n虚拟光盘文件常用.bin作为后缀，但并不意味着所有.bin文件都是虚拟光盘。\n\n如果你的daemon无法正常安装它，说明它很可能不是虚拟光盘。\n\n另外在软件的安装后文件夹中大部分软件或服务器软件都有个 bin 文件夹。\n\n因为 BIN（BINary）其中文是：二进制。\n\n里面存放的一般是可执行的二进制文件，所以我们通常使用较大型的软件时都会发现有这个名称的文件夹。\n\nBIN文件还有一种最可能的是步步高之类学习机的学习文件或者是点读文件，这类文件只有在制定的硬件或者条件下运行，其他一切方法一概都不能打开或者运行该文件。\n\n此外，在linux平台下，其支持多分区结构，bin就是其中之一。\n\nbin 在linux系统分区中表示存放标准系统实用程序；\n\nsbin 存放标准系统管理文件；\n\ntmp 存放临时文件。\n\n还有一种较为简单的方式：直接将bin文件强制改名为iso文件即可直接用虚拟光驱打开。\n\n方法三\n\n下载daemontools中文版然后安装\n\n在右下角daemontools图标点右键-虚拟CD/DVDROOM-驱动器-安装印象文件-然后找到你的BIN文件就OK了\n\n方法四\n\n打开步骤\n\n1.下载一个foxitreader阅读器\n\n2.安装成功后，通过此程序打开文件\n\n3.P.S我当时是这么打开的，至于你们不能打开我真的不知道其中原因，敬请原谅!\n\n无法安装bin文件常见问题解答：\n\n原因一、是你的daemontools软件版本太低，导致你无法打开bin文件。\n\n原因二、可以是你的bin文件有疑问，有些文件以bin为扩展名，但是并非是虚拟光驱的镜像文件，所以你所说的这个bin的文件要确认好是否是镜像文件才行。其它软件所应用的bin文件daemon是打不开的。\n\n原因三、可以是你运行daemon软件装载镜像文件时，看不到bin的文件，这点你不用担心，只要你将该文件扩展名重命名为iso的就可以应用了。\n...\n围绕二进制文件基于数据库存取存在速度慢、占用资源多的问题，通过对BS上传文件原理的分析，通过数据与文件分开存储，文件切割上传的方法实现二进制文件基于数据库的高速存取。",
+          "snippet": "二进制文件，其用途依系统或应用而定。一种文件格式binary的缩写。一个后缀名为\".bin\"的文件，只是表明它是binary格式。比如虚拟光驱文件常用\".bin\"作为后缀，但并不意味着所有的bin文件都是虚拟光驱文件。",
+          "content": ""
+        },
+        {
+          "title": "bins",
+          "site_name": "新东方在线官网",
+          "site_icon": "https://cdn.deepseek.com/site-icons/koolearn.com",
+          "authority": 3,
+          "rerank_score": 1.3743371963500977,
+          "date": null,
+          "url": "https://www.koolearn.com/dict/wd_17198.html",
+          "summary": "# bins\n\n听听怎么读\n\n[binz]\n\n是什么意思\n\n大储藏箱( bin的名词复数 )；宽口箱（如面包箱，垃圾箱等）；\n\n扔掉，丢弃( bin的第三人称单数 )；\n\n## 双语释义\n\nn.(名词)\n\n- [C]大储藏箱 a large storage container, e.g. for grain or coal\n- [C]宽口箱 a wide-mouthed container (especially one with a lid) used in the home for bread,waste,etc.\n\n## 英英释义\n\n#### bin[ binz ]\n\n- n.\n- a container; usually has a lid\n- the quantity contained in a bin\n同义词：binful\n\n- an identification number consisting of a two-part code assigned to banks and savings associations; the first part shows the location and the second identifies the bank itself\n同义词：bank identification numberABA transit number\n\n- v.store in bins\n...\n## 词汇搭配\n\n用作名词 (n.)\n名词+～\n- grain bin粮仓\n- rice bin米仓；饭桶\n\n## 词组短语\n\nosama bin laden奥萨马·本·拉登\n\nrecycle bin回收站；资源回收筒\n\nrubbish bin垃圾筒，垃圾桶\n\nstorage bin贮料仓；储料存箱\n\ngarbage bin n.\n...\ntrash bin垃圾箱\n\ncoal bin煤箱，煤仓\n\nore bin矿（石）仓\n\noverhead bin锅顶仓，吊挂箱；舱顶行李箱\n\nwaste bin废物箱；\n...\nsurge bin贮仓，储料仓；缓冲仓；平衡料仓\n...\n## 双语例句\n\n用作名词(n.)\n\n- They're putting them into a white bin.\n他们把它们放进一个白色的箱柜里。\n- I bought a bread bin for my family.\n我给家里买了一个面包箱。\n- Chuck it in the bin!\n把它扔到垃圾桶里去！\n- Please put all your sweet wrappers in the bin.\n请把你们的糖纸都放进垃圾箱里去。\n\n用作及物动词(vt.)\n\n- Do you need to keep these letters or shall we bin them?\n你需要保存这些信件吗，还是干脆把它们扔掉?\n\n## 权威例句\n\nAdaptive memory calibration using binsA rapid, exact curved-wave theory for EXAFS calculations“Balls into Bins” — A Simple and Tight Analysis“Balls into Bins” — A Simple and Tight AnalysisFluoroscopically triggered contrast-enhanced three-dimensional MR angiography with elliptical centric view order: application to the...Balls and bins: a study in negative dependenceConstrained and restrained refinement in EXAFS data analysis with curved wave theoryWind tunnel airflow measurements on plastic apple storage binsOnline Packing of Rectangular Items into Square BinsPublic Participation in Designing the Recycling Bins to Encourage Recycling",
+          "snippet": "是什么意思 大储藏箱( bin的名词复数 )；宽口箱（如面包箱，垃圾箱等）； 扔掉，丢弃( bin的第三人称单数 ) ... bin[ binz ] - n. - a container ... 同义词...",
+          "content": ""
+        },
+        {
+          "title": "【bin】什么意思_英语bin的翻译_音标_读音_用法_例句_在线翻译_有道词典",
+          "site_name": "有道",
+          "site_icon": "https://cdn.deepseek.com/site-icons/youdao.com",
+          "authority": 3,
+          "rerank_score": 1.366301417350769,
+          "date": null,
+          "url": "http://dict.youdao.com/w/BIN/#keyfrom=E2Ctranslation",
+          "summary": "### 专业释义英英释义\n\n- 料斗 储藏室 储藏槽\n- 接收器 收集器 筐\n- (在剪辑过程中)装有胶片的箱子\n- 挂片桶\n- 筐 箱\n- 箱 贝尔资讯网路 (bell information network) 二进制 二进数\n...\n#### bin [ bin ]\n\n- n.\n- a container; usually has a lid\n- the quantity contained in a bin\n同义词： binful\n\n- an identification number consisting of a two-part code assigned to banks and savings associations; the first part shows the location and the second identifies the bank itself\n\n- v. store in bins\n\n以上来源于: WordNet\n\n### 柯林斯英汉双解大词典\n\n#### bin /bɪn/ CET6+ TEM4\n\n- 1.\nN-COUNT A bin is a container that you keep or store things in. 贮物容器\n例：\n...big steel storage bins.\n\n…钢制大贮藏箱。\n\n- 2.\nN-COUNT A bin is a container that you put waste or rubbish in. 垃圾箱 [英国英语]\n...\n### 双语例句原声例句权威例句\n\nShe scrunched up three pages of notes and threw them in the bin.\n\n她把3页笔记揉成团并把它们扔进了垃圾箱。\n\nWhat's in your bin?\n\n你的垃圾桶里有什么？\n\nPrince Alwaleed bin Talal of Saudi Arabia donated twenty million dollars to build a new exhibit area within the Louvre.\n...\nAnd which ones you can put in. How to fill up that bin. Very important in shipping.\n\n还有置放的种类，如何填满这个箱子呢？,这在运输中是个很重要的问题。\n\nPeople use bin packing algorithms to figure out, for example, how to load up container ships.\n\n人么通常用装箱算法来计算这个问题，比如说怎样装载货船。\n\n\"I read it, ripped it up and put it in the bin, \" he said.\n\nOfficials at Georgetown and Harvard defend their decision to accept the grant from bin Talal.\n\nWhat we don't know is whether Mitt Romney would have ordered the bin Laden raid.",
+          "snippet": "料斗 储藏室 储藏槽 ... bin [ bin ] - n. - a container; usually has a lid ... N-COUNT A bin is a container that you keep or store things in. 贮物容器 ... N-COUNT A bin is a container that you put waste or rubbish in. 垃圾箱 [英国英语]",
+          "content": ""
+        }
+      ]
+    }
+  ],
+  "search": {
+    "results": [
+      {
+        "title": "成熟了！Bin：觉得Doran很可爱，比较喜欢他 世一上是在玩梗",
+        "site_name": "zhibo8.com",
+        "site_icon": "https://cdn.deepseek.com/site-icons/zhibo8.com",
+        "authority": 3,
+        "rerank_score": 1.7590263493385123,
+        "date": "2026-11-08T16:00:00+00:00",
+        "url": "http://news.zhibo8.com/game/2026-11-09/6af15179134d4native.htm",
+        "summary": "# 成熟了！Bin：觉得Doran很可爱，比较喜欢他 世一上是在玩梗\n\n直播吧11月9日讯 晋级决赛后Bin接受国内媒体采访表示非常激动，直言这是创造历史的一刻；评价对手Doran时称其稳健且可爱；谈及“世一上”头衔，他认为只是玩梗。\n...\nBin： 非常开心和激动，因为这是创造历史的一刻。\n...\nBin： 感觉他一直是个比较稳健的选手，我也觉得他很可爱，比较喜欢他。\n...\nBin： 感觉就是在玩梗吧。\n...\nBin： 其实还好，主要为了服务团队去赢下游戏，这是最重要的事情。\n...\n宙斯眼中的彬，彬眼中的多兰和多兰眼中的宙斯其实是一样的\n...\n这一轮下来可以说世一上没问题了\n...\n感觉完全净化成另外一个人了，陌生！\n...\n彬哥早些年要有这个觉悟 估计冠军都拿了不少了\n...\n最近看到这么一句话，挺值得回味的：你不能同时拥有青春和觉悟。\n...\n宾真成熟了。\n...\n宙斯不香了，要多兰了是吧，AI给他安排上\n...\n谦虚bin，这是概念神\n...\n被社会磨去了棱角 你就看bin赢了lpl魔咒还发微博不就知道了。。孩子也是不容易，这两年被喷成啥了。\n...\n他妈的接吻都有。 shy亲69，斌亲宙斯。\n...\n本来作者估计玩玩梗的，结果慢慢变成写实了，BLG也争气，一路打了上来，能一直编下去//@黎明的蓝：已经有了，哈哈",
+        "snippet": "觉得Doran很可爱，比较喜欢他 世一上是在玩梗 ... 评价对手Doran时称其稳健且可爱；谈及“世一上”头衔，他认为只是玩梗 ... 感觉他一直是个比较稳健的选手，我也觉得他很可爱，比较喜欢他。",
+        "content": ""
+      },
+      {
+        "title": "Bin说觉得Doran很可爱比较喜欢他",
+        "site_name": "手机新浪网",
+        "site_icon": "https://cdn.deepseek.com/site-icons/sina.cn",
+        "authority": 1,
+        "rerank_score": 1.640117180872763,
+        "date": "2026-11-08T16:00:00+00:00",
+        "url": "https://k.sina.cn/article_1618051664_m6071825003301rqmi.html?from=game",
+        "summary": "## 【#Bin说觉得Doran很可爱比较喜欢他#】#Bin称世一上就是在玩梗# BLG上单Bin在S16半决赛击败T1，终结LPL对T1的S赛BO5十三连败后，赛后采访直言觉得Doran很可爱，称世一上其实就是自己在玩梗。\n...\n@Bin哥厉害 :就是很开心，然后非常激动，因为这是创造历史的一刻 Q:今天和对面Doran的对线交锋，你怎么评价这名选手？ @Bin哥厉害 :我就感觉他一直都是一个比较稳健的选手吧，然后我也觉得他很可爱，比较喜欢他 Q:在你眼里，世一上，到底是一个头衔还是一种对自己的要求？ @Bin哥厉害 :就是在玩梗吧我感觉 Q:粉丝们说...",
+        "snippet": "【#Bin说觉得Doran很可爱比较喜欢他#】#Bin称世一上就是在玩梗# BLG上单Bin在S16半决赛击败T1，终结LPL对T1的S赛BO5十三连败后，赛后采访直言觉得Doran很可爱，称世一上其实就是自己在玩梗。 Q ... @Bin哥厉害 :就是很开心 ... 我就感觉他一直都是一个比较稳健的选手吧，然后我也觉得他很可爱，比较喜欢他 Q...",
+        "content": ""
+      },
+      {
+        "title": "Bin 说 GEN 不如 T1 还怕 BLG，这评价让 LCK 粉丝坐不住了",
+        "site_name": "手机新浪网",
+        "site_icon": "https://cdn.deepseek.com/site-icons/sina.cn",
+        "authority": 2,
+        "rerank_score": 1.640117180872763,
+        "date": "2026-11-08T16:00:00+00:00",
+        "url": "https://www.sina.cn/news/detail/5363338714284034.html",
+        "summary": "参加S16全球总决赛的四支LCK队伍，大家普遍觉得GEN最强，毕竟是LCK年度总冠军，还在半决赛零封了iG，但Bin说GEN不如T1，他觉得GEN比T1更好打，还说GEN是害怕BLG的[doge]\nBLG打T1的比分是3-1，打GEN会赢得更轻松吗？\n#Bin说GEN不如T1# #Bin说GEN害怕BLG##Bin力挺Doran#",
+        "snippet": "参加S16全球总决赛的四支LCK队伍，大家普遍觉得GEN最强，毕竟是LCK年度总冠军，还在半决赛零封了iG，但Bin说GEN不如T1，他觉得GEN比T1更好打，还说GEN是害怕BLG的[doge] ... Bin说GEN不如T1# #Bin说GEN害怕BLG##Bin力挺Doran",
+        "content": ""
+      },
+      {
+        "title": "[閒聊] Bin真的變好多 - 看板LoL",
+        "site_name": "pttgamer.com",
+        "site_icon": "https://cdn.deepseek.com/site-icons/pttgamer.com",
+        "authority": 2,
+        "rerank_score": 1.6146980389971335,
+        "date": "2026-11-08T16:00:00+00:00",
+        "url": "https://pttgamer.com/LoL/1gyL5HzB",
+        "summary": "# [閒聊] Bin真的變好多\n\n看板LoL (英雄聯盟)作者elmoman (\\同志友善帳號/)時間32分鐘前 (2026/11/09 12:51)推噓9(9推 0噓 11→)留言20則, 14人參與, 3分鐘前最新討論串1/1\n\n除了外貌牙套雌化幹片以外 更多讓人感受到是 看到殘血也會忍住不衝 (除了選到武器時 有幾次差點露出本性) 會為打團犧牲卡位子 這次世界賽看下來一直覺得 蛤這真的是阿Bin? 賽後寵粉依依握手簽名全程笑臉 輸贏都是微笑(以前常明顯臭臉) 而且今天賽後訪問那個謙虛的態度 對照去年的 真的謙卑好多 以前的自大Bin真的沒了 現在是謙虛Bin 冠軍賽不論誰贏都是創造歷史 比去年更期待了 -- ※ 發信站: 批踢踢實業坊(ptt.cc), 來自: 27.247.224.161 (臺灣) ※ 文章網址: https://www.ptt.cc/bbs/LoL/M.1794199889.A.F4B.html\n...\n裝逼裝太多了\n...\n升級謙遜Bin大進化了\n...\nBin：世一上只是玩梗，我認為T1比GEN更強！\n...\n浪子回頭金不換\n...\n謙遜bin 決賽超 今年大好看\n...\n從BIN割 413 大小姐 揹書包離隊兩次 整容 到現在 他\n...\n到底經歷了多少\n...\n作為老飛粉的他今天也不忘稱讚李哥\n...\n打多藍大部分都長這樣\n...\n老實說心態還是挺強的 對岸在那瘋狂數字 他也不care\n...\n他本來就沒差 333被噴過微博一鍵防護，他真沒差\n...\n拜聖槍為師 變的如此謙卑\n...\n肯定很在乎網暴吧 不然哪會改那麼多\n...\n現在就是要講官腔誰不會講\n...\n他說23歲了 該嚴肅了\n...\nBin哥人一變，BLG整個團隊都順起來了\n...\n決賽需要狂一點，不然保守打很難贏Geng\n...\n他不想證明自己後強很多，MSI時有這改變就不會輸宙\n...\n斯了==但也是輸了才蛻變，有好有壞。",
+        "snippet": "除了外貌牙套雌化幹片以外 更多讓人感受到是 看到殘血也會忍住不衝 (除了選到武器時 有幾次差點露出本性) 會為打團犧牲卡位子 這次世界賽看下來一直覺得 蛤這真的是阿Bin? 賽後寵粉依依握手簽名全程笑臉 輸贏都是微笑(以前常明顯臭臉) 而且今天賽後訪問那個謙虛的態度 對照去年的 真的謙卑好多 以前的自大Bin真的沒了 現在是謙虛Bin 冠軍賽不論誰贏都是創造歷史 比去年更期待了 -- ※ 發信站...",
+        "content": ""
+      },
+      {
+        "title": "我真心觉得bin比马头强",
+        "site_name": "虎扑",
+        "site_icon": "https://cdn.deepseek.com/site-icons/hupu.com",
+        "authority": 2,
+        "rerank_score": 1.6056205859299069,
+        "date": "2026-11-08T16:00:00+00:00",
+        "url": "https://bbs.hupu.com/643792746.html",
+        "summary": "# 我真心觉得bin比马头强\n...\n柳智敏fans(53级)楼主2026-11-09 11:34:42发布于浙江\n\n我真心觉得bin比马头强由柳智敏fans 发表在英雄联盟 https://bbs.hupu.com/lol\n...\n现在肯定比码头强。\n...\n我比的是整体的生涯 他真比马头强 历史上进国际赛决赛次数第二的人 仅次于faker 而且他的状态 出道六七年了 一直保持在前三的水平 真的太夸张了\n...\n马头本质LCK的马桶上单罢了，碰上韩国上单就开送，多兰的第一亲儿子\n...\n僵尸就是1819强了两年，而且那两年也不稳定，超鬼比赛比比皆是，只不过人家人缘好，打好一场世界赛就成了lpl历史第一人物\n...\n马头这种在lck都找不到工作的，也就是来lpl运气好碰见爆种的中野带他拿了个冠军，打欧美捞比打了几个名场面，结果吹一辈子那种\n...\n从游戏天赋来比两个人不相上下，但是其余方面，现在的bin大于shy，今年是能看到bin的成长改变，回归后的bin比赛内容好看了很多，而马头依旧是那个马头，已经不期待了\n...\n巅峰比不上ts，生涯长度可以。\n...\n不是人缘好，是s8一战成名吸了太多梦女，你没看他投票没输过？我被人介绍相亲，还遇到过id“the shy的小娇妻”\n...\n巅峰打了几个韩国队？\n...\n码头连多兰都打不过\n...\nbin确实强，但马头S赛FMVP摆在那，跨时代比荣誉还差一截\n...\n18年的 theshy还是牛逼的！不能这样比较，即便他现在舆论很大，但是s8换来的免喷权还是用了吧！今天赢了就行了\n...\n整个生涯马头也就强1年半，只不过高光太高了给粉丝有幻想空间罢了",
+        "snippet": "我比的是整体的生涯 他真比马头强 历史上进国际赛决赛次数第二的人 仅次于faker 而且他的状态 出道六七年了 一直保持在前三的水平 真的太夸张了 ... 现在的bin大于shy，今年是能看到bin的成长改变，回归后的bin比赛内容好看了很多...",
+        "content": ""
+      }
+    ]
+  },
+  "wiki_lists": [
+    {
+      "schema_version": 1,
+      "items": [
+        {
+          "slug": "48上单",
+          "title": "48上单",
+          "summary": "来源 “48上单”是一个针对BLG战队上单选手Bin（陈泽彬）的黑称，由数字“4”和“8”组成，其中“4”谐音“死”，“8”谐音“爸”，合起来即对选手家人的侮辱性称呼。该说法最早流传于部分黑粉群体之间，并非近期才出现。 在…",
+          "tags": [
+            "电竞梗",
+            "英雄联盟",
+            "谐音梗",
+            "嘲讽",
+            "数字梗",
+            "黑称",
+            "讽刺"
+          ],
+          "aliases": [],
+          "keywords": [
+            "48上单",
+            "Bin",
+            "BLG",
+            "英雄联盟",
+            "电竞黑称",
+            "数字梗",
+            "谐音梗"
+          ],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/8b3856b9cce6bde68f3511e7eafe494218becec9.jpg",
+          "updated_at": "2026-11-09T09:18:39.906963+00:00",
+          "source_video": {
+            "bvid": "BV1Goub6FE6g",
+            "title": "48上单是什么梗？",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/8b3856b9cce6bde68f3511e7eafe494218becec9.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2026-08-07T07:28:30Z"
+          }
+        },
+        {
+          "slug": "欧派动力学",
+          "title": "欧派动力学",
+          "summary": "来源 “欧派动力学”源自学者 Anrobino 撰写的一篇硬核恶搞论文，研究对象是《小林家的龙女仆》角色露科亚。作者先用透视法估算露科亚的身高和胸部尺寸，再将统一模型中的胸部改为完全平坦的 AA 罩杯，其他身体条件保持不变…",
+          "tags": [
+            "二次元",
+            "恶搞",
+            "伪科学",
+            "动漫梗",
+            "反讽",
+            "调侃",
+            "论文梗",
+            "文字梗"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i2.hdslb.com/bfs/archive/c5c054f07aa0ca2cc1a52f9348eb57e88d90713f.jpg",
+          "updated_at": "2026-10-06T21:39:27.663545Z",
+          "source_video": {
+            "bvid": "BV1PXpc6KEVd",
+            "title": "【梗知识】欧派动力学",
+            "cover_url": "https://i2.hdslb.com/bfs/archive/c5c054f07aa0ca2cc1a52f9348eb57e88d90713f.jpg",
+            "creator_name": "梗的知识",
+            "published_at": "2026-10-06T11:55:32Z"
+          }
+        },
+        {
+          "slug": "bin大小姐",
+          "title": "Bin大小姐",
+          "summary": "来源 “Bin大小姐”是《英雄联盟》LPL 赛区 BLG 战队上单选手 Bin 的性转恶搞形象。该梗源于 BLG 在国际赛事失利后，玩家将 Bin 制作成性转 AI 形象，并以“大小姐”人设进行二创短剧。该形象既有 AI…",
+          "tags": [
+            "英雄联盟",
+            "电竞梗",
+            "图像梗",
+            "ai生成",
+            "二次创作",
+            "恶搞",
+            "玩家社群",
+            "调侃"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i0.hdslb.com/bfs/archive/e78fc44214d9e512c48ef3c568f0d197ea83a320.jpg",
+          "updated_at": "2026-08-23T05:05:28.149691Z",
+          "source_video": {
+            "bvid": "BV1p1gE6DEww",
+            "title": "【梗知识】bin 大小姐",
+            "cover_url": "https://i0.hdslb.com/bfs/archive/e78fc44214d9e512c48ef3c568f0d197ea83a320.jpg",
+            "creator_name": "梗的知识",
+            "published_at": "2026-08-13T03:29:02Z"
+          }
+        },
+        {
+          "slug": "我依旧是世一x",
+          "title": "我依旧是世一X",
+          "summary": "来源 该梗出自LPL战队BLG上单选手Bin（陈泽彬）。2026年LPL开年阶段，BLG以1:2爆冷输给AL。赛后不到10分钟，Bin发布微博：“我依旧是世一上。”当时队友ON的巴德打出0/7战绩，舆论正集中批评ON。Bi…",
+          "tags": [
+            "文字梗",
+            "电竞梗",
+            "英雄联盟",
+            "赛事梗",
+            "自嘲",
+            "反串",
+            "自信表达"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i0.hdslb.com/bfs/archive/497775e859a3f7098f7448e33e2279c67593bf9f.jpg",
+          "updated_at": "2026-08-22T08:18:02.806277Z",
+          "source_video": {
+            "bvid": "BV1SqP9zhESm",
+            "title": "【白给梗科普】我依旧是世一X是什么梗？",
+            "cover_url": "https://i0.hdslb.com/bfs/archive/497775e859a3f7098f7448e33e2279c67593bf9f.jpg",
+            "creator_name": "baigei梗科普",
+            "published_at": "2026-03-09T12:50:27Z"
+          }
+        },
+        {
+          "slug": "闹鸟瘟",
+          "title": "闹鸟瘟",
+          "summary": "来源 “闹鸟瘟”源自米哈游旗下游戏《崩坏：星穹铁道》中的角色“知更鸟”（Robin）。知更鸟在游戏中是一名歌手偶像，其角色PV歌曲《在银河中孤独摇摆》（或简称“在银河中”）旋律抓耳、传播极广。该梗的玩法通常以“鸟类科普”的…",
+          "tags": [
+            "崩坏星穹铁道",
+            "游戏梗",
+            "音乐梗",
+            "整活",
+            "玩家社群",
+            "声音梗",
+            "米哈游",
+            "二次元"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i0.hdslb.com/bfs/archive/1976e24c8a54c155754ea390efcc47e3cbefe696.jpg",
+          "updated_at": "2026-07-12T08:21:12.723591Z",
+          "source_video": {
+            "bvid": "BV12n4bz1ER4",
+            "title": "【游戏热梗】闹鱼瘟和闹鸟瘟是什么梗",
+            "cover_url": "https://i0.hdslb.com/bfs/archive/1976e24c8a54c155754ea390efcc47e3cbefe696.jpg",
+            "creator_name": "耍梗两年半",
+            "published_at": "2025-10-14T08:36:27Z"
+          }
+        }
+      ],
+      "limit": 5,
+      "offset": 0,
+      "has_more": true
+    },
+    {
+      "schema_version": 1,
+      "items": [
+        {
+          "slug": "14发滋崩",
+          "title": "14发滋崩",
+          "summary": "来源 “14发滋崩”梗源自腾讯游戏《高能英雄》于2023年9月21日全平台上线时，游戏内的一把名为“雷射狙击枪”（玩家俗称“滋崩”）的武器。因其在《高能英雄》中被官方设定为拥有14发子弹的弹匣容量，远超其在同类游戏（如《A…",
+          "tags": [
+            "游戏梗",
+            "高能英雄",
+            "射击游戏",
+            "武器",
+            "调侃",
+            "网络迷因"
+          ],
+          "aliases": [],
+          "keywords": [
+            "14发滋崩",
+            "高能英雄",
+            "雷射狙击枪",
+            "滋崩",
+            "游戏梗"
+          ],
+          "images": [],
+          "cover_url": "https://i2.hdslb.com/bfs/archive/b1cc63e0d6dcda9b4487eef4d018998102047c60.jpg",
+          "updated_at": "2026-11-09T13:57:27.550653+00:00",
+          "source_video": {
+            "bvid": "BV1f34y1P7Jz",
+            "title": "【梗指南】14发滋崩是什么梗",
+            "cover_url": "https://i2.hdslb.com/bfs/archive/b1cc63e0d6dcda9b4487eef4d018998102047c60.jpg",
+            "creator_name": "梗指南",
+            "published_at": "2023-09-21T03:00:00Z"
+          }
+        },
+        {
+          "slug": "11-1",
+          "title": "11-1",
+          "summary": "来源 “11-1”是源自2023年《英雄联盟》S13全球总决赛的一个梗。在本次世界赛的淘汰赛阶段，韩国战队T1在与LPL（中国赛区）队伍的交锋中取得了压倒性的胜利。具体来说，T1在八强赛以3:0击败LNG，半决赛以3:1击…",
+          "tags": [
+            "游戏梗",
+            "电竞梗",
+            "赛事梗",
+            "英雄联盟",
+            "吐槽",
+            "自嘲",
+            "数字梗",
+            "2023年"
+          ],
+          "aliases": [],
+          "keywords": [
+            "11-1",
+            "T1",
+            "LPL",
+            "英雄联盟",
+            "S13全球总决赛",
+            "Faker"
+          ],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/61d2b1721fd4fbbbc61cabc52c4c618223dc9e41.jpg",
+          "updated_at": "2026-11-09T13:54:55.019364+00:00",
+          "source_video": {
+            "bvid": "BV1QN411T7s8",
+            "title": "11-1是什么梗？冠军实至名归",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/61d2b1721fd4fbbbc61cabc52c4c618223dc9e41.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2023-11-19T16:01:20Z"
+          }
+        },
+        {
+          "slug": "bro懂我的",
+          "title": "Bro懂我的",
+          "summary": "来源 “Bro懂我的”最早出自博主杨世花卷发布的视频。视频里博主疯狂展示自己的穿搭，旁边的马连续疯狂点头，营造出一种“很懂、很认可”的氛围，于是这段“马点头”画面被网友拿来二创，逐渐演变成固定模板。 后续网友把“点头”这一…",
+          "tags": [
+            "文字梗",
+            "网络用语",
+            "句式模仿",
+            "情感表达",
+            "动物",
+            "短视频梗",
+            "二创",
+            "表达喜爱"
+          ],
+          "aliases": [
+            "Bro，懂我的",
+            "懂我的bro"
+          ],
+          "keywords": [
+            "Bro懂我的",
+            "懂我的bro",
+            "杨世花卷",
+            "马点头",
+            "点头认可",
+            "被理解",
+            "评论区接梗"
+          ],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/419b080ee911025486d0db3eb7b0c4699820ef84.jpg",
+          "updated_at": "2026-11-09T06:50:34.136273+00:00",
+          "source_video": {
+            "bvid": "BV1LETez9EWv",
+            "title": "【梗百科】Bro懂我的XX是啥梗？",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/419b080ee911025486d0db3eb7b0c4699820ef84.jpg",
+            "creator_name": "梗百科",
+            "published_at": "2025-06-09T09:50:33Z"
+          }
+        },
+        {
+          "slug": "知乎宇宙",
+          "title": "知乎宇宙",
+          "summary": "来源 “知乎宇宙”是中文互联网对知乎平台上一类假设性提问及其衍生讨论的统称。这类提问通常以“如果……你会怎么做”为句式，设定夸张、荒诞或思想实验式的前提（如“有一个按钮，每按一次给你10元，但寿命减少一分钟”），引发答主进…",
+          "tags": [
+            "文字梗",
+            "荒诞",
+            "幽默表达",
+            "吐槽",
+            "b站梗",
+            "up主梗",
+            "调侃",
+            "网络文化",
+            "网络用语",
+            "论坛文化",
+            "知乎宇宙",
+            "句式套用"
+          ],
+          "aliases": [],
+          "keywords": [
+            "知乎",
+            "假设性提问",
+            "瞎问虾猜",
+            "按钮",
+            "减寿",
+            "年薪计算",
+            "思想实验",
+            "脑洞提问",
+            "附加条件",
+            "逻辑推演"
+          ],
+          "images": [
+            {
+              "name": "视频封面",
+              "asset_id": "884644c3a49769db89abbc7f03b0ed00d773f81946b6453e85dcdc76650a3a00",
+              "url": "https://cnmeme.wiki/api/v1/wiki/images/884644c3a49769db89abbc7f03b0ed00d773f81946b6453e85dcdc76650a3a00",
+              "download_url": "https://cnmeme.wiki/api/v1/wiki/images/884644c3a49769db89abbc7f03b0ed00d773f81946b6453e85dcdc76650a3a00?download=1&name=%E8%A7%86%E9%A2%91%E5%B0%81%E9%9D%A2"
+            },
+            {
+              "name": "视频封面",
+              "asset_id": "e681c4c97a5b197f489b0927df4df3ac018190a56aaf6ce483eee6b01a40a4c0",
+              "url": "https://cnmeme.wiki/api/v1/wiki/images/e681c4c97a5b197f489b0927df4df3ac018190a56aaf6ce483eee6b01a40a4c0",
+              "download_url": "https://cnmeme.wiki/api/v1/wiki/images/e681c4c97a5b197f489b0927df4df3ac018190a56aaf6ce483eee6b01a40a4c0?download=1&name=%E8%A7%86%E9%A2%91%E5%B0%81%E9%9D%A2"
+            }
+          ],
+          "cover_url": "https://i0.hdslb.com/bfs/archive/9b96b88c076a57698ddcaa9ce162af778c2fc121.jpg",
+          "updated_at": "2026-11-08T17:44:07.918249+00:00",
+          "source_video": {
+            "bvid": "BV1Rb4y1B7tY",
+            "title": "【知乎宇宙】有一个按钮，每按一次给你10元，但你的寿命会减少一分钟，你会按多少次？",
+            "cover_url": "https://i0.hdslb.com/bfs/archive/9b96b88c076a57698ddcaa9ce162af778c2fc121.jpg",
+            "creator_name": "瞎问虾猜丶",
+            "published_at": "2021-12-10T03:05:40Z"
+          }
+        },
+        {
+          "slug": "14-7分",
+          "title": "14.7分",
+          "summary": "来源 该梗源于2020年东京奥运会（因疫情于2021年举办）体操男子个人全能决赛。日本选手桥本大辉在跳马项目中落地时出现明显失误，一只脚出界，但裁判组依然给出了14.7的高分。这一分数与许多观众和专业人士的观感形成巨大反差…",
+          "tags": [
+            "体育",
+            "奥运会",
+            "争议判罚",
+            "讽刺",
+            "网络迷因",
+            "图像梗"
+          ],
+          "aliases": [],
+          "keywords": [
+            "14.7分",
+            "桥本大辉",
+            "东京奥运会",
+            "体操判罚",
+            "争议评分",
+            "网络迷因"
+          ],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/45623ebf380c3270836f6a2f095004e0cc471957.jpg",
+          "updated_at": "2026-11-07T13:33:17.424257+00:00",
+          "source_video": {
+            "bvid": "BV1Lh411z7EW",
+            "title": "【梗百科】14.7分是怎么回事？",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/45623ebf380c3270836f6a2f095004e0cc471957.jpg",
+            "creator_name": "梗百科",
+            "published_at": "2021-07-29T08:30:05Z"
+          }
+        }
+      ],
+      "limit": 5,
+      "offset": 0,
+      "has_more": true
+    },
+    {
+      "schema_version": 1,
+      "items": [
+        {
+          "slug": "马头",
+          "title": "马头",
+          "summary": "来源 “马头”是英雄联盟职业选手 TheShy （姜承録）的 黑称 。因 TheShy 脸型偏长，被部分网友认为神似马脸。早年 LPL 还有一位顶级上单选手 Nuguri （牛宝），因其脸型也被认为像牛，于是两人被网友合称…",
+          "tags": [
+            "游戏梗",
+            "电竞梗",
+            "英雄联盟",
+            "主播梗",
+            "嘲讽",
+            "弹幕文化",
+            "调侃",
+            "谐音梗"
+          ],
+          "aliases": [],
+          "keywords": [
+            "马头",
+            "TheShy",
+            "姜承録",
+            "炫神",
+            "牛头马面",
+            "马头牛逼",
+            "已取餐",
+            "僵尸",
+            "阿一占",
+            "阿一古",
+            "断手",
+            "断"
+          ],
+          "images": [],
+          "cover_url": "https://i2.hdslb.com/bfs/archive/fc34d8b17001d87f3f7d5cdfcdd048cdb5d47548.jpg",
+          "updated_at": "2026-11-09T14:15:47.345799+00:00",
+          "source_video": {
+            "bvid": "BV1n5YM6rE56",
+            "title": "马头是什么梗？马头为啥nb？",
+            "cover_url": "https://i2.hdslb.com/bfs/archive/fc34d8b17001d87f3f7d5cdfcdd048cdb5d47548.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2026-09-10T05:59:49Z"
+          }
+        },
+        {
+          "slug": "48上单",
+          "title": "48上单",
+          "summary": "来源 “48上单”是一个针对BLG战队上单选手Bin（陈泽彬）的黑称，由数字“4”和“8”组成，其中“4”谐音“死”，“8”谐音“爸”，合起来即对选手家人的侮辱性称呼。该说法最早流传于部分黑粉群体之间，并非近期才出现。 在…",
+          "tags": [
+            "电竞梗",
+            "英雄联盟",
+            "谐音梗",
+            "嘲讽",
+            "数字梗",
+            "黑称",
+            "讽刺"
+          ],
+          "aliases": [],
+          "keywords": [
+            "48上单",
+            "Bin",
+            "BLG",
+            "英雄联盟",
+            "电竞黑称",
+            "数字梗",
+            "谐音梗"
+          ],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/8b3856b9cce6bde68f3511e7eafe494218becec9.jpg",
+          "updated_at": "2026-11-09T09:18:39.906963+00:00",
+          "source_video": {
+            "bvid": "BV1Goub6FE6g",
+            "title": "48上单是什么梗？",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/8b3856b9cce6bde68f3511e7eafe494218becec9.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2026-08-07T07:28:30Z"
+          }
+        },
+        {
+          "slug": "瓦场悟道",
+          "title": "瓦场悟道",
+          "summary": "来源 “瓦场悟道”出自网友对英雄联盟职业选手369（TS战队上单）近期表现的调侃。369此前因实力下滑沦为替补，休赛期沉迷《无畏契约》（俗称“瓦”或“瓦罗兰特”），几乎放弃英雄联盟。后因同位置首发选手签证问题无法参赛，36…",
+          "tags": [
+            "游戏梗",
+            "电竞梗",
+            "英雄联盟",
+            "无畏契约",
+            "反差",
+            "调侃",
+            "选手梗"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i0.hdslb.com/bfs/archive/aeeeb398d1b8dad7fe1482bdae6299d24ce22bb5.jpg",
+          "updated_at": "2026-10-26T17:19:20.830761Z",
+          "source_video": {
+            "bvid": "BV1oNn96cE38",
+            "title": "【梗知识】瓦场悟道",
+            "cover_url": "https://i0.hdslb.com/bfs/archive/aeeeb398d1b8dad7fe1482bdae6299d24ce22bb5.jpg",
+            "creator_name": "梗的知识",
+            "published_at": "2026-10-26T06:30:03Z"
+          }
+        },
+        {
+          "slug": "让队友很舒服",
+          "title": "让队友很舒服",
+          "summary": "来源 该梗最早出自王者荣耀主播赖神（赖子，前职业选手、国服老夫子）。早期赖神以“老夫子天花板”闻名，打法以带线牵制、换塔换资源为主，巅峰期常靠这种风格极限翻盘、带飞队友，也曾创造过不少一打多名场面。然而随着年龄增长和反应速…",
+          "tags": [
+            "游戏梗",
+            "主播梗",
+            "竞技游戏梗",
+            "自嘲",
+            "甩锅",
+            "句式模仿",
+            "口头禅",
+            "赛事梗"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/e1dd8a52041e93d0a1e4581286f93f8dacbf2d9e.jpg",
+          "updated_at": "2026-09-09T21:05:43.629329Z",
+          "source_video": {
+            "bvid": "BV1Lg8i6TEwc",
+            "title": "让队友很舒服是什么梗？大家都很舒服",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/e1dd8a52041e93d0a1e4581286f93f8dacbf2d9e.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2026-08-24T04:06:43Z"
+          }
+        },
+        {
+          "slug": "圣杯型选手",
+          "title": "圣杯型选手",
+          "summary": "来源 “圣杯型选手”源自于对英雄联盟职业选手“圣枪哥”（Flandre，原LNG战队上单，现效力于BLG）的调侃。最初，网友将“圣枪哥”的名字谐音化为“圣杯哥”，并由此衍生出“圣杯型选手”这一说法。该梗最早流行于LPL赛事…",
+          "tags": [
+            "游戏梗",
+            "电竞梗",
+            "调侃",
+            "讽刺",
+            "英雄联盟",
+            "王者荣耀",
+            "玩家社群",
+            "直播梗"
+          ],
+          "aliases": [],
+          "keywords": [],
+          "images": [],
+          "cover_url": "https://i1.hdslb.com/bfs/archive/aa82c6faebac851e9d95f59e9aded61712feebd3.jpg",
+          "updated_at": "2026-09-09T20:28:58.467693Z",
+          "source_video": {
+            "bvid": "BV1mpgH6AEMG",
+            "title": "圣杯上单是什么梗，为啥让队友很舒服？",
+            "cover_url": "https://i1.hdslb.com/bfs/archive/aa82c6faebac851e9d95f59e9aded61712feebd3.jpg",
+            "creator_name": "灵宝懂点啥",
+            "published_at": "2026-08-13T04:27:24Z"
+          }
+        }
+      ],
+      "limit": 5,
+      "offset": 0,
+      "has_more": true
+    }
+  ]
+}
