@@ -282,6 +282,22 @@ body {
   gap: calc(24px * var(--site-space));
   align-items: start;
 }
+.cc-input-columns {
+  grid-template-columns: minmax(0, 1fr) 300px;
+}
+.cc-input-primary { min-width: 0; }
+/* 评论页侧栏在桌面端随滚动吸顶；过高时允许独立滚动。 */
+@media (min-width: 1024px) {
+  .cc-thread-columns > .cc-side,
+  .cc-thread-columns > .cc-director-col {
+    position: sticky;
+    top: 24px;
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 0 6px 8px 0;
+  }
+}
 @media (max-width: 1023px) {
   .cc-columns { grid-template-columns: 1fr; }
   .cc-main { order: 1; }

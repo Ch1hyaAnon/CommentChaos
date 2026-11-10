@@ -250,20 +250,20 @@ export default function App() {
         </header>
 
         {screen === "input" ? (
-          <div className="cc-columns">
-            <InputStage
-              seed={seed}
-              setSeed={setSeed}
-              community={community}
-              setCommunity={setCommunity}
-              onSubmit={() => runGenerate(null)}
-              onDemo={startDemo}
-              error={error}
-              busy={busy}
-            />
-            <div className="cc-director-col">
+          <div className="cc-columns cc-input-columns">
+            <div className="cc-input-primary">
+              <InputStage
+                seed={seed}
+                setSeed={setSeed}
+                community={community}
+                setCommunity={setCommunity}
+                onSubmit={() => runGenerate(null)}
+                onDemo={startDemo}
+                error={error}
+                busy={busy}
+              />
               {busy && (
-                <div className="cc-loading" role="status">
+                <div className="cc-loading" role="status" style={{ marginTop: 24 }}>
                   <p className="cc-loading-line cc-loading-dots">{loadingLine}</p>
                   <p className="cc-hint">AI 嘴替们正在入场（一般 10–30 秒）</p>
                 </div>
@@ -284,7 +284,7 @@ export default function App() {
           </div>
         ) : (
           result && (
-            <div className="cc-columns">
+            <div className="cc-columns cc-thread-columns">
               <div className="cc-side">
                 <StatsPanel thread={result} commentCount={visible} />
               </div>
